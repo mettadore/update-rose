@@ -1,8 +1,8 @@
 application: rose-clock
-version: 1
+version: 2
 runtime: python
 api_version: 1
 
 handlers:
-- url: /.*
+- url: .*
   script: helloworld.py
