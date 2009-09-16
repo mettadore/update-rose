@@ -2,11 +2,13 @@
 {% block clocks %}
         <H1>Twitter Update Rose Diagrams</H1>
         <p>See your relative update frequency organized by time of day. The last 500 updates of a user are used
-        and the last 200 updates of the user's friends are used (so it's not a total sample, sorry).</p>
-        <p>This is an example app using Google App Engine and Google Charts to graph data on the fly. It's a quick
-        hack intended for testing a concept, not abstracting a solution.
-        It's also an example of using Google's Radar charts to cobble together Rose diagrams. It's only here
-        so I can have a web app with readily parsable data to test with, but you're welcome to enter a Twitter name and see the results.
+        and the last 200 updates of the user's friends are used (so it's not a total sample, sorry). The time is adjusted
+        based on the UTC offset in the user's Twitter account, so should always be local time for that account's perspective.</p>
+        <p>This is an example web application using Google App Engine and Google Charts to pull and graph data on the fly. 
+        It's a quick hack intended for testing a concept, not abstracting a solution.
+        It's also an example of using Google's Radar charts to cobble together Rose diagrams as I've detailed <a href="http://positivelyglorious.com/software-media/wow-fully-functional-rose-diagrams-with-google-chart/">on my blog</a>. 
+        It's only here
+        so I can have a web app with readily parsed data to test with, but you're welcome to enter a Twitter name and see the results.
         Eventually, I'll post some code on my <a href="http://github.com/Mettadore/">Github account</a> but, like I said, it's a 
         quick hack and I'm not likely to do too much to this version.
         (refresh your window if it borks, there's an issue with Twitter's update API causing a timeout.)</p>

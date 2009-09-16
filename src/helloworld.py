@@ -10,7 +10,7 @@ from google.appengine.ext.webapp import template
 
 from Rose import Rose
 import twitter_local
-from account import uname, passwd
+from private.account import uname, passwd
 
 class RoseHolder(object):
     def __init__(self, name):
